@@ -19,7 +19,7 @@ const verPersona=()=>{
         cuerpo+="<div>"+user.nombre+" "+user.telefono+"</div>";
     });
     
-    cuerpo = +"</div>";
+    cuerpo +="</div>";
     document.getElementById("persona").innerHTML = cuerpo;
 };
 
