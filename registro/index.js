@@ -1,4 +1,4 @@
-
+var users = [];
 
 const verPersona=()=>{
     var nombre = document.getElementById("nombre").value;
@@ -11,8 +11,16 @@ const verPersona=()=>{
         ,email
         ,genero};
 
+    users.push(persona);
+
+    var cuerpo = "<div>";
+
+    users.map(user=>{
+        cuerpo+="<div>"+user.nombre+" "+user.telefono+"</div>";
+    });
     
-    document.getElementById("persona").innerHTML = "<div>"+JSON.stringify(persona)+"</div>";
+    cuerpo = "</div>";
+    document.getElementById("persona").innerHTML = cuerpo;
 };
 
 //init();
