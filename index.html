@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transporte</title>
+    <link rel="stylesheet" href="styletransporte.css">
 </head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
 <body>
-    <h1>Bienvenido a Stransporte</h1>
+
+<header>
+
+    <h1 id="titulo">Bienvenido a Transporte</h1>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#signin" >Registro</a></li>
+            <li><a href="#contact"target="_blank">Contacto</a></li>
+
+        </ul>
+
+
+    </nav>
+
+</header>
+
+<main>
+
+    <div id="about">
+    <section id="home">
+
+        <h2 id="tituloabout">Sobre nosotros</h2>
+        <image src="imgs/logo.png"></image>
+        <p>Transporte es una empresa de transporte libre creada por</p>
+        <p>desarrolladores cruceños para cruceños. Nosotros pretendemos </p>
+        <p>generar empleo para el transportista y generar soluciones para</p>
+        <p>el usuario. Te invitamos a formar parte de nuestro proyecto.</p>
+        <a href="#vermas">Ver más</a>
+
+    </section>
+    </div>
+
+<br><br><br><br><br><br>
+
+    <div id="signin">
+        <section id="registro">
+
+        <h2 id="tituloregistro">Registro de conductor</h2>
+        <form action="registro.txt" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required><br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba sus apellidos" required><br><br>
+
+            <label for="ci">CI:</label>
+            <input type="text" id="ci" name="ci" placeholder="Escriba su numero de documento" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Escriba su numero de telefono" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Escriba su email" required><br><br>
+
+
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required> 
+                <option value="seleccione">Seleccione su genero</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="nodecirlo">Prefiero no decirlo</option>
+                <option value="nobinario">No binario</option>
+
+            </select> <br><br>
+
+            <input type="submit" value="Registrarse">
+            <input type="reset" value="Borrar datos">
+
+    </section>
+    </div>
+
+<br><br><br><br><br><br><br><br><br>
+
+    <div id="contact">
+        <section id="contacto">
+
+
+            <figure class="rrss">
+                <a href="https://www.facebook.com/juampablo.montoyasalinas"target="_blank">
+                <image src="imgs/facebook.png"width=100px></image>
+                <figcaption>Facebook</figcaption>
+            </figure>
+        
+
+
+            <figure class="rrss">
+                <a href="https://www.instagram.com/jpms19/?hl=es-la"target="_blank">
+                <image src="imgs/tiktok.png"width=100px></image>
+                <figcaption>Tik Tok</figcaption>
+            </figure>
+            <a href="https://www.youtube.com/watch?v=vIZo_ndXc-A"  target="_blank">
+                <figure class="rrss">
+                <image src="imgs/whatsapp.png"width=100px></image>
+                <figcaption>Whatsapp</figcaption>
+            </figure>
+
+        </div>
+
+</main>
+
 </body>
+<br><br>
+<footer>
+
+    <p>@Transporte 2024</p>
 </html>
